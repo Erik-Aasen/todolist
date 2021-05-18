@@ -15,9 +15,7 @@ app.use(express.urlencoded()); //parse URL encoded bodies
 app.set('view engine', 'ejs'); // for ejs
 app.use(express.static("public")); //tells express to serve up the files in public folder
 
-var dbURI = process.env.DB_URI;
-
-mongoose.connect(dbURI, {
+mongoose.connect(process.env.DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
