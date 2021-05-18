@@ -2,7 +2,6 @@ const express = require("express");
 const date = require(__dirname + "/date.js");
 const mongoose = require("mongoose");
 const _ = require("lodash");
-var config = require(__dirname + "/config.js");
 
 const app = express();
 
